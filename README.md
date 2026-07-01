@@ -1,5 +1,10 @@
 # 🏦 Smart Lender - Loan Approval Prediction System
 
+
+## 🖇️ App link - https://smartlender-smartbridge.onrender.com
+
+---
+
 ## 📌 Overview
 
 Smart Lender is a Machine Learning-powered web application that predicts whether a loan application is likely to be approved based on applicant details. The system helps banks and financial institutions make faster, data-driven loan approval decisions by analyzing applicant information using a trained machine learning model.
