@@ -1,17 +1,17 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 import joblib
 import numpy as np
 
     
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 # Load the trained model
 model = joblib.load("loan_prediction_model.pkl")
 
 
-@app.route('/')
-def home():
-    return render_template("index.html")
+@app.route('/static/<path:filename>')
+def static_files(filename):
+    return send_from_directory('static', filename)
 
 
 @app.route('/predict', methods=['POST'])
